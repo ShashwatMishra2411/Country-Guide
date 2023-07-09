@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+}
+h1{
+    font-family: 'Noto Serif Makasar', serif;
+    text-transform: uppercase;
+    font-weight: 1000;
+    color: white;
+    font-size: 3em;
+    text-shadow: 1px 1px 4px black;
+}
+#sarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    align-items: center;
+    border-radius: 2em;
+    width: 90vw;
+    height: 28vh;
+    overflow: hidden;
+    gap: 2vh;
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+    box-shadow: inset 0px -3px 2px black;
+}
+#cin{
+    height: 7vh;
+    border: none;
+    width: 50vw;
+    font-size: 4.5vh;
+    border-bottom: 2px solid black;
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+}
+#enter{
+    position: relative;
+    font-size: 4vh;
+    bottom: 1.2vh;
+    background-image: radial-gradient( circle 897px at 9% 80.3%,  rgba(55,60,245,1) 0%, rgba(234,161,15,0.90) 100.2% );
+    color: white;
+    height: 7vh;
+    width: 20vw;
+    border-radius: 4vw;
+    border: none;
+    box-shadow: 0px 5px 5px black;
+}
+#enter:active{
+    top: 0.1vw;
+    box-shadow: none;
+}
+#cdet{
+    display: grid;
+    grid-template-areas: 
+    "text name"
+    "text flag"
+    "text coa";
+    padding: 10px;
+    height: 0;
+    overflow: hidden;
+    font-weight: 550;
+}
+ul{
+    grid-area: text;
+}
+
+li{
+    font-size: 3.5vh;
+    margin: 1.5vh;
+}
+li::marker{
+    content: none;
+}
+#name{
+    grid-area: name;
+    text-align: center;
+    font-size: 5vh;
+    font-weight: 900;
+}
+#flag{
+    grid-area: flag;
+    display: block;
+    align-self: center;
+    width: 30vw;
+    height: 30vh;
+}
+#flag img{
+    width: 100%;
+    height: 100%;
+}
+#name{
+    display: block;
+    align-self: center;
+}
+#coa{
+    display: block;
+    align-self: center;
+    width: 25vw;
+    height: 25vh;
+}
+#coa img{
+    grid-area: coa;
+    width: 100%;
+    height: 100%;
+}
+#back{
+    display: none;
+    align-self: center;
+    background-color: blue;
+    color: white;
+    height: 5vh;
+    width: 8vw;
+    border-radius: 4vw;
+    border: none;
+    box-shadow: 0px 5px 5px black;
+}
+#input{
+    margin-top: 2vh;
+}
+@media all and (max-width:650px){
+    h1{
+        font-family: 'Noto Serif Makasar', serif;
+        text-transform: uppercase;
+        font-weight: 1000;
+        color: white;
+        font-size: 10vw;
+        text-shadow: 1px 1px 4px black;
+    }
+    #cin{
+        height: 7vh;
+        border: none;
+        width: 50vw;
+        font-size: 4.5vw;
+        border-bottom: 2px solid black;
+        background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+    }
+    #enter{
+        position: relative;
+        font-size: 4vw;
+        bottom: 1.2vw;
+        background-image: radial-gradient( circle 897px at 9% 80.3%,  rgba(55,60,245,1) 0%, rgba(234,161,15,0.90) 100.2% );
+        color: white;
+        height: 7vh;
+        width: 20vw;
+        border-radius: 4vw;
+        border: none;
+        box-shadow: 0px 5px 5px black;
+    }
+    li{
+        font-size: 3.8vw;
+        margin: 1.5vh;
+    }
+}
