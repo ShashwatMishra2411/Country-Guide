@@ -130,6 +130,29 @@ li::marker{
 #input{
     margin-top: 2vh;
 }
+#weat{
+    width: 25%;
+    height: 4vh;
+    overflow: hidden;
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+#wlink{
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 100%;
+    padding: 5%;
+    background-image: url(weather/head.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-decoration: none;
+}
+
 @media all and (max-width:650px){
     h1{
         font-family: 'Noto Serif Makasar', serif;
@@ -163,4 +186,28 @@ li::marker{
         font-size: 3.8vw;
         margin: 1.5vh;
     }
+    #weat{
+        width: 55%;
+        height: 8vw;
+        overflow: hidden;
+        padding: 1%;
+        
+    }
+    #wlink{
+        width: 100%;
+        height: 100%;
+        white-space: nowrap;
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+        font-size: 100%;
+        padding: 5%;
+        background-image: url(weather/head.svg);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+        text-decoration: none;
+    }
+    
 }
